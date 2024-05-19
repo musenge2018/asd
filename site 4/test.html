@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0; /* Remove default margin */
+        }
+
+        body {
+            display: flex;
+        }
+
+        .side, #content {
+            padding: 10px;
+        }
+
+        .side {
+            background: blue;
+            width: 200px; /* Set a fixed width for side sections */
+            color: white; /* Ensure text is readable */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items at the top */
+            align-items: center; /* Center items horizontally */
+        }
+
+        #content {
+            flex-grow: 1;
+            background: grey;
+            color: white; /* Ensure text is readable */
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .anchorElement {
+            display: block;
+            text-align: center;
+            margin: 20px 0; /* Add vertical margin for spacing */
+            max-width: 100%; /* Ensure the container doesn't exceed side width */
+            overflow: hidden; /* Hide any overflow content */
+            border: 2px solid #ff9900; /* Add a border for visual appeal */
+            border-radius: 10px; /* Rounded corners */
+            background-color: #ffcc00; /* Background color */
+        }
+
+        .advertIMG {
+            width: 100%; /* Make sure the image fills the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Side Banner -->
+    <div class="side">
+        <a href="https://www.example.com" class="anchorElement">
+            <img src="https://www.example.com/path-to-your-nye-image.jpg" class="advertIMG" alt="New Year's Eve Advertisement">
+        </a>
+        <h3>Item 1</h3>
+        <h3>Item 2</h3>
+        <h3>Item 3</h3>
+        <h3>Item 4</h3>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <p>Main content goes here</p>
+    </div>
+
+    <!-- Side Section -->
+    <div class="side">
+        <h3>Item A</h3>
+        <h3>Item B</h3>
+        <h3>Item C</h3>
+        <h3>Item D</h3>
+    </div>
+</body>
+</html>
+
